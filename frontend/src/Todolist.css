@@ -1,48 +1,108 @@
+/* General container styling */
 .todo-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Input container */
 .input-container {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-input {
-  padding: 10px;
-  font-size: 16px;
-  width: 300px;
-  margin-right: 10px;
+.input-container input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 0.5rem;
 }
 
-button {
-  padding: 10px;
-  font-size: 16px;
+.input-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.input-container button:hover {
+  background-color: #218838;
+}
+
+/* Todo list */
 .todo-list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .todo-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.todo-item input {
-  width: 70%;
-  padding: 8px;
-  font-size: 16px;
+.todo-item input[type="text"] {
+  flex: 1;
+  border: none;
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.todo-item input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid #007bff;
 }
 
 .todo-item button {
-  margin-left: 10px;
-  padding: 8px;
-  font-size: 14px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item button:nth-child(2) {
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.todo-item button:nth-child(2):hover {
+  background-color: #0056b3;
+}
+
+.todo-item button:nth-child(3) {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.todo-item button:nth-child(3):hover {
+  background-color: #c82333;
 }
