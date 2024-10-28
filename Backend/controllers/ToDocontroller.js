@@ -14,7 +14,6 @@ module.exports.saveToDo = async (req, res) => {
     try {
         const data = await ToDoModel.create({text:req.body.text}); 
         console.log("Added successfully...");
-        console.log(data);
         res.send(data); 
     } catch (err) {
         res.status(500).send({ error: "Error saving ToDo" }); 

@@ -1,0 +1,32 @@
+/* Center the container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  /* Style the heading */
+  .home-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  /* Container for buttons */
+  .button-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Button styles */
+  .button-container .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
